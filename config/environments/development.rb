@@ -29,9 +29,12 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
-  host = 'rails-tutorial-mhartl.c9users.io' # 不要原封不动使用这个域名，
+  host = 'https://13ded0ac1c704a41b21271673c3b6639.vfs.cloud9.us-east-1.amazonaws.com' # 不要原封不动使用这个域名，
 # 应该使用你本地的开发主机地址
+  
   config.action_mailer.default_url_options = { host: host, protocol: 'https' }
+  # host = 'localhost:3000'
+  #config.action_mailer.default_url_options = { host: host, protocol: 'http' }
   config.action_mailer.perform_caching = false
 
   # Print deprecation notices to the Rails logger.
